@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Me!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #fefefe;
+            color: #333;
+        }
+        header {
+            background-color: #ffe5ec;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #ffb6c1;
+            padding: 15px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            color: #e91e63;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            scroll-snap-type: x mandatory;
+            padding: 10px 0;
+        }
+        .gallery img {
+            flex: 0 0 auto;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            scroll-snap-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.4s, box-shadow 0.4s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #ffe5ec;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .facts {
+            background-color: #f9f1f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        .facts ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+        .update-section {
+            margin-top: 50px;
+            background-color: #fef6f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .update-section img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .gallery img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        /* Інтерактивність */
+        .click-info {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function showImageInfo(src) {
+            alert("Це зображення: " + src);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.gamestatic.net/files/editor_uploads/NikolayD/2024/april/vse-rabochie-kody-dlya-roblox-adopt-me-2024.jpg" alt="Adopt Me!">
+        <nav>
+            <a href="#holovna">Головна</a>
+            <a href="#hishtory">Історія</a>
+            <a href="#galery">Галерея</a>
+            <a href="#updates">Оновлення</a>
+            <a href="#facts">Цікаві факти</a>
+            <a href="#kont">Контакти</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="holovna">Adopt Me! — Онлайн-гра у світі Roblox</h1>
+        <p>Adopt Me! — це багатокористувацька гра, у якій гравці можуть усиновлювати домашніх тварин, піклуватися про них, будувати будинки та взаємодіяти з іншими. Гра стала світовим феноменом із понад 30 мільярдами переглядів. Вона залишається однією з найпопулярніших на Roblox.</p>
+
+        <h2 id="hishtory">Історія та значення</h2>
+        <p>Гру створили двоє користувачів Roblox: Bethink і NewFissy. Починаючи з усиновлення дітей, гра поступово трансформувалася у догляд за тваринками. Завдяки оновленням, таким як тварини-камені чи мега-неонові улюбленці, популярність гри стрімко зросла. У 2020 році одночасно грали понад 1,6 млн користувачів!</p>
+
+        <h2 id="galery">Фото галерея</h2>
+        <p class="click-info">Натисни на улюблену тваринку, щоб дізнатись її адресу 🐾</p>
+        <div class="gallery">
+            <img src="https://adoptmetradingvalues.com/images/242.png" onclick="showImageInfo(this.src)" alt="Pet 1">
+            <img src="https://adoptmetradingvalues.com/images/203.png" onclick="showImageInfo(this.src)" alt="Pet 2">
+            <img src="https://boltvalues.com/_next/image?url=https%3A%2F%2Fadme-avatars.fra1.cdn.digitaloceanspaces.com%2Fbolt%2Fstatic%2Ffestive-deliveries-sleigh-x4.webp&w=256&q=75" onclick="showImageInfo(this.src)" alt="Sleigh">
+            <img src="https://cdn.nookazon.com/adoptme/vehicles/2854601262.png" onclick="showImageInfo(this.src)" alt="Vehicle">
+            <img src="https://boltvalues.com/_next/image?url=https%3A%2F%2Fadme-avatars.fra1.cdn.digitaloceanspaces.com%2Fbolt%2Fstatic%2Fhot-air-balloon-x4.webp&w=828&q=75" onclick="showImageInfo(this.src)" alt="Balloon">
+            <img src="https://mail.adoptmetradingvalues.com/images/1028.png" onclick="showImageInfo(this.src)" alt="Pet 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa4lqBnC66ftXAHLZ76kEgV05WUMxvRYWYGA&s" onclick="showImageInfo(this.src)" alt="Surprise Egg">
+        </div>
+
+        <div class="update-section" id="updates">
+            <h2>Нові оновлення</h2>
+            <p>Щомісяця Adopt Me! випускає нові оновлення: від тематичних івентів до сезонних карт та нових яєць. Наприклад, у березні 2025 додано <strong>Весняне яйце</strong> з можливістю отримати рідкісного метелика!</p>
+            <img src="https://i.ytimg.com/vi/p7fIFbMMiT4/maxresdefault.jpg" alt="Spring update screenshot">
+        </div>
+
+        <div class="facts" id="facts">
+            <h2>Цікаві факти про Adopt Me!</h2>
+            <ul>
+                <li>У грі можна отримати ліцензію трейдера, щоб уникнути шахрайства при обміні тваринками.</li>
+                <li>Гравці мають змогу побудувати власний будинок і повністю його оформити.</li>
+                <li>Щоп'ятниці в Adopt Me! виходять оновлення або нові івенти.</li>
+                <li>В Adopt Me! існує понад 250 різних типів домашніх улюбленців.</li>
+                <li>Події гри часто натхнені реальними святами — Новий рік, Гелловін, Пасха.</li>
+            </ul>
+                    <img width="100%" src="https://kiddisvit.ua/assets/images/LOGOS/adopt-me-logo.jpg">
+        </div>
+
+        <h2 id="kont">Контакти</h2>
+        <p>Бренд Adopt Me! — це іграшки та колекційні фігурки, створені за мотивами гри. Ви можете придбати м'які іграшки 13, 20 або 30 см, а також сюрпризи в яйцях. Представництва — в усіх великих містах України: Київ, Львів, Одеса, Харків, Дніпро та інші. 
+        <br><br>Зв'яжіться з нами: <strong>info@adoptme-toys.ua</strong></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Adopt Me Fan Project. Усі права належать Uplift Games.</p>
+    </footer>
+</body>
+</html>
